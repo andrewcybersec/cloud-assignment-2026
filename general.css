@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(223, 220, 177);
+    scroll-behavior: smooth;
+}
+/* ===============================HEADER IS STARTING ==============================*/
+header {
+    text-align: center;
+    background-color: black;
+    color: #00ff00;
+}
+
+
+header .logo_image img {
+    max-height: 100px;
+    width: auto;
+}
+
+header h1 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+header a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+header .introduction {
+    padding: 10px;
+}
+
+/* ============================ WELCOME MESSAGE SECTION =========================== */
+
+.welcome {
+    text-align: center;
+    padding: 50px 20px 50px 50px;
+    background: linear-gradient(180deg, #badcf5 0%, #ebbebe 100%);
+}
+
+.welcome h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d6efd;
+} 
+
+
+.welcome a:hover {
+    background-color: #e088e0;
+    border: none;
+    color: black;
+}
+
+/* ==========================HOME SERVICE SECTION============================ */
+
+.home-service .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.home-service .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.home-service .card i {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.home-service .card a {
+    border-radius: 20px;
+}
+
+.home-service .card a:hover {
+    color: black;
+    font-weight: bold;
+}
+/* ======================= FOOTER ======================= */
+
+footer {
+    color: #00ff00;
+    background-color: black;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e3f2fd;
+}

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Cyber Security Portfolio</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link rel="icon" href="Place to place icon for the title of the document"> -->
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* ===============================HEADER IS STARTING ==============================*/
+
+        header {
+            text-align: center;
+            background-color: black;
+        }
+
+        .message,
+        .message-top {
+            color: white;
+            font-style: italic;
+        }
+
+        .message-top {
+            padding-top: 6px;
+        }
+
+        header .logo_image img {
+            max-height: 100px;
+            width: auto;
+        }
+
+        header h1 {
+            padding: 10px;
+            font-size: 30px;
+            color: #00ff00;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        header a {
+            color: #ff00ff;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        header .introduction {
+            padding: 10px;
+        }
+
+        /* ========================INTERNAL CONTENT OF THE PORTFOLIO======================= */
+
+        .wasifu {
+            text-align: center;
+        }
+
+        .wasifu img {
+            height: auto;
+            max-width: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            /* border: 3px solid #00ff00; */
+            margin-bottom: 20px;
+
+        }
+
+        .section-title {
+            color: #00ff00;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 5px;
+        }
+
+        .btn-theme {
+            border: none;
+            color: black;
+            transition: background-color 0.3s;
+        }
+
+        /* --------------- NOW IS THE TIME FOR PROJECTS STYLING ------------------- */
+
+        /* =====================Start with Table of Contents========================= */
+
+        .free_projects {
+            margin: 40px 10px;
+            padding: 10px;
+        }
+
+        .free_projects h2 {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .free_projects .projects_description h5 a {
+            text-decoration: none;
+            font-size: 20px;
+            color: blueviolet;
+        }
+
+        .free_projects .projects_description h5 a:hover {
+            color: #ff00ff;
+
+        }
+
+        .free_projects p {
+            padding-left: 20px;
+            font-size: 20px;
+        }
+
+        /* ================paid projects =================== */
+
+        .paid_projects h2 {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .paid_projects_card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            background-color: #fff;
+        }
+
+        .paid_projects_card:hover {
+            transform: translateY(-5px);
+        }
+
+        .paid_projects_card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .paid_projects_card .card-body {
+            padding: 20px;
+        }
+
+        .paid_projects_card .btn-buy {
+            color: #fff;
+            border: none;
+            transition: background 0.3s;
+            border-radius: 20px;
+        }
+
+        .paid_projects_card .btn-buy:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* ======================= INTERNAL CONTENT OF THE FREE PROJECTS ========================== */
+
+        .projects {
+            margin: 10px 5px;
+            padding: 5px;
+        }
+
+        .projects h3 {
+            text-align: center;
+            padding-top: 40px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .projects h4 {
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 25px;
+        }
+
+        .projects p {
+            padding-left: 20px;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .projects .image h6 {
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        .projects img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        pre {
+            background-color: #1e1e1e;
+            color: #00ff99;
+            padding: 15px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .projects iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 10px;
+            margin-bottom: 45px;
+        }
+
+        @media (max-width: 768px) {
+            .projects iframe {
+                height: 250px;
+            }
+        }
+
+        /* =====================FOOTER SECTION============================= */
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #8b949e;
+            padding: 20px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.4rem;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #e3f2fd;
+        }
+    </style>
+</head>
+
+<body>
+    <!--=============HEADER IS STARTING =================-->
+    <header>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo_image">
+                        <img src="photos/andrewcybersec.png" alt="andrew cybersec book hub logo image">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1> Andrew Lutera Portfolio</h1>
+
+                    <div class="message">
+                        <p>
+                            Andrew CyberSec Founder & Chief Cybersecurity Expert <br>(AKA: <strong
+                                style="color: #00ff00;" title="Also Known As">"Mr Cyber"</strong>)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="message-top">
+                        <p>
+                            Welcome to Andrew Lutera Portfolio,
+                            in this portfolio you know more about Andrew,
+                            and some of the free project(s).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="navigation">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="service.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About</a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="wasifu">
+                    <img src="photos/test.jpg" alt="">
+                    <h1>Andrew Lutera</h1>
+                    <p class="lead"> Chief Cybersecurity Expert. Andrew specializes in Digital Forensics & Incident
+                        Response
+                        (DFIR), Network Penetration Testing (NPT), and Cloudy Security (CS). His mission is to help
+                        businesses and
+                        individuals secure their digital presence against evolving cyber threats.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div>
+                    <h3 class="section-title">About Me</h3>
+                    <p>
+                        I’m a passionate Cyber Security student currently studying at Arusha Technical College.
+                        I enjoy learning about ethical hacking, digital forensics, and protecting digital systems.
+                    </p>
+                    <ul>
+                        <li><strong>Age:</strong> 21</li>
+                        <li><strong>Location:</strong> Arusha, Tanzania</li>
+                        <li><strong>Education Level:</strong> Diploma in Cyber Security and Digital Forensics.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="section-title">Skills</h3>
+                    <ul>
+                        <li>Digital Forensics & Incident Response (DFIR)</li>
+                        <li>Network Penetration Testing (NPT)</li>
+                        <li>Cloud Security (CS)</li>
+                    </ul>
+                </div>
+
+                <div class="text-center mt-5">
+                    <div class="mt-3">
+                        <h3 class="section-title" style="text-align: left; padding-left: 10px;">Contact Me</h3>
+                        <p>Email: <a href="mailto:andrewlutera00@gmail.com">andrewlutera00@gmail.com</a></p>
+                        <p>Phone: +255 688 369 475</p>
+                        <div class="social-icons mt-3">
+                            <a href="#" class="text-dark fs-4 me-3"><i class="bi bi-github"></i></a>
+                            <a href="https://www.youtube.com/@andrewcybersec" class="text-danger fs-4"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="text-primary fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="text-info fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-danger fs-4 me-3"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--================= THIS ONE IS FOR FREE PROJECTS =========================== -->
+
+        <section class="free_projects">
+            <h2>Content Of Free Project(s)</h2>
+            <hr>
+            <div class="projects_description">
+                <h5><a href="#one">Project, One (DFIR)</a></h5>
+                <p>
+                    Full Incident Responce Case Study (images, timeline, report).
+                </p>
+            </div>
+            <div class="projects_description">
+                <h5><a href="#two">Project, Two (NPT)</a></h5>
+                <p>
+                    Network Penetration Testing report against lab target (scope, methodology, findings, remediation).
+                </p>
+            </div>
+            <div class="projects_description">
+                <h5><a href="#three">Project, Three (CS)</a></h5>
+                <p>
+                    Secured Cloud Deployment + Hardening Checklist + Audit Report.
+                </p>
+            </div>
+            <div class="projects_description">
+                <h5><a href="#four">Project, Four (Script and Tools)</a></h5>
+                <p>
+                    Five Useful Scripts (Python/Bash).
+                </p>
+            </div>
+        </section>
+
+        <!-- ============== THIS ONE IS FOR PAID PRJECTS =========================== -->
+        <section class="paid_projects">
+            <h2>Content Of Paid Project(s)</h2>
+            <hr>
+            <div class="row g-4 my-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card paid_projects_card">
+                        <img src="photos/test.jpg" alt="project name">
+                        <div class="card-body">
+                            <h5 class="card-title">Name of the Paid Project</h5>
+                            <p class="card-text">
+                                Some Description of the paid project and the coast for that project.
+                            </p>
+                            <button class="btn btn-buy w-100 bg-success">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card paid_projects_card">
+                        <img src="photos/test.jpg" alt="project name">
+                        <div class="card-body">
+                            <h5 class="card-title">Name of the Paid Project</h5>
+                            <p class="card-text">
+                                Some Description of the paid project and the coast for that project.
+                            </p>
+                            <button class="btn btn-buy w-100 bg-success">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card paid_projects_card">
+                        <img src="photos/test.jpg" alt="project name">
+                        <div class="card-body">
+                            <h5 class="card-title">Name of the Paid Project</h5>
+                            <p class="card-text">
+                                Some Description of the paid project and the coast for that project.
+                            </p>
+                            <button class="btn btn-buy w-100 bg-success">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card paid_projects_card">
+                        <img src="photos/test.jpg" alt="project name">
+                        <div class="card-body">
+                            <h5 class="card-title">Name of the Paid Project</h5>
+                            <p class="card-text">
+                                Some Description of the paid project and the coast for that project.
+                            </p>
+                            <button class="btn btn-buy w-100 bg-success">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card paid_projects_card">
+                        <img src="photos/test.jpg" alt="project name">
+                        <div class="card-body">
+                            <h5 class="card-title">Name of the Paid Project</h5>
+                            <p class="card-text">
+                                Some Description of the paid project and the coast for that project.
+                            </p>
+                            <button class="btn btn-buy w-100 bg-success">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card paid_projects_card">
+                        <img src="photos/test.jpg" alt="project name">
+                        <div class="card-body">
+                            <h5 class="card-title">Name of the Paid Project</h5>
+                            <p class="card-text">
+                                Some Description of the paid project and the coast for that project.
+                            </p>
+                            <button class="btn btn-buy w-100 bg-success">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== INTERNAL CONTENT OF THE FREE PROJECTCS ================== -->
+
+        <section class="projects" id="one">
+            <h3>Project One, Digital Forensics & Incident Responce</h3>
+            <hr>
+            <p>Chief Cybersecurity Expert. Andrew specializes in Digital Forensics & Incident Response (DFIR), Network
+                Penetration Testing (NPT), and Cloudy Security (CS). His mission is to help businesses and individuals
+                secure their digital presence against evolving cyber threats.</p>
+
+            <div class="image">
+                <h6>php image title</h6>
+                <img src="photos/test.jpg" alt="code image">
+            </div>
+
+            <pre>
+php code here
+why code do not take effect to this page mother fuckerlksadjfaklsdjfakjdlfajf;jda;fkdjlfkadj;fkajdf;lkajdflkjd;lf
+skdfj;akldsj;faaaaaa
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+Through Your Email Address Registered.
+
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+                    Through Your Email Address Registered.
+            </pre>
+
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Chapter 1 Video" allowfullscreen></iframe>
+        </section>
+
+        <section class="projects" id="two">
+            <h3>Project Two,Network Penetration Testing</h3>
+            <hr>
+            <p>
+                Chief Cybersecurity Expert. Andrew specializes in Digital Forensics & Incident Response (DFIR), Network
+                Penetration Testing (NPT), and Cloudy Security (CS). His mission is to help businesses and individuals
+                secure their digital presence against evolving cyber threats.
+            </p>
+
+            <div class="image">
+                <h6>php image title</h6>
+                <img src="photos/test.jpg" alt="code image">
+            </div>
+
+            <pre>
+php code here
+why code do not take effect to this page mother fuckerlksadjfaklsdjfakjdlfajf;jda;fkdjlfkadj;fkajdf;lkajdflkjd;lf
+skdfj;akldsj;faaaaaa
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+Through Your Email Address Registered.
+
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+                    Through Your Email Address Registered.
+            </pre>
+
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Chapter 1 Video" allowfullscreen></iframe>
+        </section>
+
+        <section class="projects" id="three">
+            <h3>Project Three, Cloud Security</h3>
+            <hr>
+            <p>Chief Cybersecurity Expert. Andrew specializes in Digital Forensics & Incident Response (DFIR), Network
+                Penetration Testing (NPT), and Cloudy Security (CS). His mission is to help businesses and individuals
+                secure their digital presence against evolving cyber threats.</p>
+
+            <div class="image">
+                <h6>php image title</h6>
+                <img src="photos/test.jpg" alt="code image">
+            </div>
+
+            <pre>
+php code here
+why code do not take effect to this page mother fuckerlksadjfaklsdjfakjdlfajf;jda;fkdjlfkadj;fkajdf;lkajdflkjd;lf
+skdfj;akldsj;faaaaaa
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+Through Your Email Address Registered.
+
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+                    Through Your Email Address Registered.
+            </pre>
+
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Chapter 1 Video" allowfullscreen></iframe>
+        </section>
+
+        <section class="projects" id="four">
+            <h3>Project Four, Script and Tools useful for Cyber </h3>
+            <hr>
+            <p>Chief Cybersecurity Expert. Andrew specializes in Digital Forensics & Incident Response (DFIR), Network
+                Penetration Testing (NPT), and Cloudy Security (CS). His mission is to help businesses and individuals
+                secure their digital presence against evolving cyber threats.</p>
+
+            <div class="image">
+                <h6>php image title</h6>
+                <img src="photos/test.jpg" alt="code image">
+            </div>
+
+            <pre>
+php code here
+why code do not take effect to this page mother fuckerlksadjfaklsdjfakjdlfajf;jda;fkdjlfkadj;fkajdf;lkajdflkjd;lf
+skdfj;akldsj;faaaaaa
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+Through Your Email Address Registered.
+
+
+You can try below questions and send to me answer throgh this
+    form and i will give feedback about your Answer
+                    Through Your Email Address Registered.
+            </pre>
+
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Chapter 1 Video" allowfullscreen></iframe>
+        </section>
+
+
+
+        <div class="text-center mt-5">
+            <button onclick="showContact()" class="btn btn-theme bg-success">Contact Me</button>
+            <div id="contactInfo" style="display:none;" class="mt-3">
+                <p>Email: <a href="mailto:andrewlutera00@gmail.com">andrewlutera00@gmail.com</a></p>
+                <p>Phone: +255 688 369 475</p>
+                <div class="social-icons mt-3">
+                    <a href="#" class="text-dark fs-4 me-3"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-danger fs-4"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="text-primary fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-info fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-danger fs-4 me-3"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Andrew CyberSec. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script>
+        function showContact() {
+            const contact = document.getElementById('contactInfo');
+            if (contact.style.display === 'none') {
+                contact.style.display = 'block';
+            } else {
+                contact.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

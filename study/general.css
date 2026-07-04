@@ -1,0 +1,450 @@
+body {
+    background-color: rgb(223, 220, 177);
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: #00ff00;
+}
+
+strong {
+    color: white;
+}
+
+header h1 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+header .logo_image {
+    margin: 5px;
+}
+
+header .logo_image img {
+    max-height: 100px;
+    min-width: 20px;
+}
+
+header p {
+    /* font-size: 20px; */
+    font-size: 1.1rem;
+}
+
+header a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+header .introduction {
+    padding: 10px;
+}
+
+/* ======= Hero Section ======= */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    background: linear-gradient(180deg, #badcf5 0%, #ebbebe 100%);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+
+/* ======= Language Cards ======= */
+.cards-section {
+    padding: 60px 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/*===================================  Now is the Time for Center  content======================*/
+
+
+/* =====================Start with Table of Contents========================= */
+
+.table_of_contents {
+    margin: 40px 10px;
+    padding: 10px;
+}
+
+.table_of_contents h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.table_of_contents .chapter_description h5 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.table_of_contents .chapter_description h5 a:hover {
+    color: #ff00ff;
+
+}
+
+.table_of_contents p {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+/* ===============================start with Interanl content Here ===========================*/
+
+.chapter {
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+.chapter h3 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.chapter h4 {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.chapter p {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.chapter .image h6 {
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* .chapter img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+} */
+
+.chapter img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+pre {
+    background-color: black;
+    padding-left: 20px;
+    padding-top: 0px;
+    border-radius: 15px;
+}
+
+pre code {
+    font-size: 1.30rem;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.chapter iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    margin-bottom: 45px;
+}
+
+@media (max-width: 768px) {
+    .chapter iframe {
+        height: 250px;
+    }
+}
+
+.booklet {
+    background-color: seashell;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #00ff00;
+    margin-bottom: 30px;
+}
+
+.booklet p {
+    text-align: center;
+    font-weight: bold;
+    padding: 9px;
+}
+
+p .btn {
+    background-color: rgb(46, 224, 61);
+    font-weight: bold;
+}
+
+.booklet .btn {
+    background-color: rgb(46, 224, 61);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.questions ol li {
+    color: black;
+    font-size: 20px;
+}
+
+#booklet label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.book .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.book .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.book .card i {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.book .btn-learn {
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.book .btn-learn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.mawasiliano .contact-form {
+    background-color: #e5e5ea;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mawasiliano .contact-info i {
+    font-size: 25px;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.mawasiliano .contact-info div {
+    margin-bottom: 20px;
+}
+
+.mawasiliano .btn-submit {
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px 30px;
+    transition: 0.3s;
+    border: none;
+}
+
+.mawasiliano .btn-submit:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.contact iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* ===== Founder Section ===== */
+.founder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.founder img {
+    border-radius: 50%;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Nitabadilisha After get an access of internent */
+    margin: 20px;
+}
+
+.founder-text {
+    max-width: 600px;
+}
+
+.feature-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card i {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    background-color: #007bff;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.cta-section {
+    background-color: #e6f0ff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+.btn-cta {
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-cta:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* ==========================  start with a footer ======================= */
+
+footer {
+    color: #00ff00;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 40px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer a {
+    color: #ff00ff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+footer h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e3f2fd;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.terms_and_policy {
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.terms_and_policy a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.unique section {
+    padding: 50px 0;
+}
+
+.unique h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.unique ul {
+    margin-left: 20px;
+}

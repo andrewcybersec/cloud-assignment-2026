@@ -1,0 +1,29 @@
+section {
+    padding: 15px;
+}
+
+form {
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #e5e5ea;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form h1 {
+    text-align: center;
+}
+
+.continue {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    color: #ff00ff;
+}

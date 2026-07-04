@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew CyberSec - About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="general.css">
+  <style>
+    /*================ FOUNDER SECTION ================== */
+
+    .founder {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .founder img {
+      border-radius: 50%;
+      max-width: 250px;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+    }
+
+    .founder-text {
+      max-width: 600px;
+    }
+
+    .founder-text p a {
+      text-decoration: none;
+      padding-left: 5px;
+    }
+
+    .founder-text p a:hover {
+      text-decoration: underline;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* Services Overview */
+    .services-overview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .service-card {
+      width: 400px;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card img {
+      /* width: 100%;
+      height: 350px;
+      object-fit: fit;
+      border-radius: 10px;
+      margin-bottom: 15px; */
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .service-card .btn-order {
+      background-color: #ff00ff;
+      font-weight: bold;
+      font-size: 20px;
+      border: none;
+      transition: background 0.3s;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    .service-card .btn-order:hover {
+      color: white;
+    }
+
+    .cta-section {
+      background-color: #e6f0ff;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 15px;
+    }
+
+    .btn-cta {
+      background-color: #007bff;
+      color: white;
+      font-weight: 500;
+      border-radius: 25px;
+      padding: 12px 30px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn-cta:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    .testimonial {
+      background-color: #007bff;
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--================ HEADER SECTION ================-->
+  <header>
+    <div class="introduction">
+      <h1>About Us</h1>
+      <div class="logo_image">
+        <img src="photos/andrewcybersec.png" alt="andrew cybersec logo image">
+      </div>
+      <div class="message">
+        <p>
+          Protecting your digital world
+        </p>
+      </div>
+      <div class="navigation">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="service.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ======= FOUNDER SECTION ======= -->
+  <section class="founder">
+    <!-- Founder Image -->
+    <img src="photos/test.jpg" alt="Andrew CyberSec">
+
+    <!-- Founder Text -->
+    <div class="founder-text">
+      <h2 class="text-primary mb-3">About the Founder <b style="color: black;">Andrew Lutera</b></h2>
+      <p>
+        Founder & Chief Cybersecurity Expert. Andrew specializes in penetration testing, network security, incident
+        response, and digital forensics. His mission is to help businesses and individuals secure their digital presence
+        against evolving cyber threats. <strong>For more information about the founder <a href="andrew_portfolio.html"
+            title="Andrew Lutera Portifolio">Click here.</a></strong>
+      </p>
+
+      <!-- Social Media -->
+      <div class="mt-3">
+        <a href="#" class="text-primary fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-dark fs-4 me-3"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-info fs-4 me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-danger fs-4 me-3"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com/@andrewcybersec" class="text-danger fs-4"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MISSION / VISION ======= -->
+  <section class="mission text-center bglight">
+    <div class="container">
+      <h2 class="text-primary mb-4">Our Mission & Vision</h2>
+      <p>
+        Andrew CyberSec was founded to provide professional, trusted, and legal cybersecurity services.
+        Our mission is to protect businesses and individuals from cyber threats while promoting safe digital practices.
+        We aim to deliver tailored security solutions, rapid incident response, and comprehensive network management for
+        a safer digital world.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======= TESTIMONIALS ======= -->
+  <section class="testimonials py-5">
+    <div class="container">
+      <h2 class="text-primary text-center mb-5">What Learners Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial">
+            "Andrew's tutorials made programming simple and fun! Highly recommend for beginners." <br><b>- Sarah L.</b>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            "The step-by-step guides and code examples helped me land my first programming job!" <br><b>- John D.</b>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            "I love the free content and interactive examples. This platform is amazing!" <br><b>- Emily K.</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="container">
+    <h2 class="text-center mb-5">Our Cybersecurity Services</h2>
+    <div class="services-overview">
+      <div class="service-card">
+        <img src="photos/cyber security and it employer.jpg" alt="Cyber Security and IT Employer">
+        <h5>Cyber Security and IT Employer</h5>
+        <p>We have release a cyber security employer and IT people to your organization to ensure trusted and legal services are done withn your organization or company.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/penetration testing.jpg" alt="Penetration Testing">
+        <h5>Penetration Testing (Ethical Hacking)</h5>
+        <p>Identify and fix vulnerabilities before attackers exploit them using safe, simulated attacks.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/network security assessment and configuration.jpg" alt="Network Security Assessment & Configuration">
+        <h5>Network Security Assessment & Configuration</h5>
+        <p>Secure and optimize LAN/Wi-Fi networks to ensure safety, reliability, and high performance.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/digital forensics and Data recovery.jpg" alt="Digital Forensics & Data Recovery">
+        <h5>Digital Forensics & Data Recovery</h5>
+        <p>Investigate digital evidence or recover lost and deleted data securely and professionally.
+
+        </p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/malware analysis and removal.jpg" alt="Malware Analysis & Removal">
+        <h5>Malware Analysis & Removal</h5>
+        <p>Analyze and remove malicious software to restore system performance and protect data integrity.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/server security hardening.jpg" alt="Server Security Hardening">
+        <h5>Server Security Hardening</h5>
+        <p>Configure Linux and Windows servers for maximum protection, stability, and performance.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/cloudy_security set-up.jpg" alt="Cloud Security Setup">
+        <h5>Cloud Security Setup</h5>
+        <p>Protect client data on cloud platforms by configuring firewalls, access controls, and backups.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/website security and development.jpg" alt="Website Security Testing & Development">
+        <h5>Website Security Testing & Development</h5>
+        <p>Build secure websites and web apps using PHP/HTML and test for vulnerabilities like SQLi and XSS.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/iot device security.jpg" alt="IoT Device Security">
+        <h5>IoT Device Security</h5>
+        <p>Test and secure smart devices and IoT systems from cyber threats and unauthorized access.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/inciden_response.jpg" alt="Incident Response">
+        <h5>Incident Response</h5>
+        <p>Respond quickly to cyber incidents to contain, investigate, and recover from security breaches.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/cyber security consulting.jpg" alt="Cybersecurity Consulting">
+        <h5>Cybersecurity Consulting</h5>
+        <p>Provide expert advice on protecting systems, managing passwords, and securing digital assets.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <div class="service-card">
+        <img src="photos/cyber awareness and training.jpg" alt="Cyber Awareness & Training">
+        <h5>Cyber Awareness & Training</h5>
+        <p>Educate employees and individuals on safe online habits, password safety, and phishing awareness.</p>
+        <a href="#"><button class="btn-order">Order</button></a>
+      </div>
+
+      <!-- <div class="service-card">
+                <img src="photos/test.jpg" alt="Penetration Testing">
+                <h5>head</h5>
+                <p>description</p>
+                <a href="#"><button class="btn-order">Order</button></a>
+            </div>
+
+            <div class="service-card">
+                <img src="photos/test.jpg" alt="Penetration Testing">
+                <h5>head</h5>
+                <p>description</p>
+                <a href="#"><button class="btn-order">Order</button></a>
+            </div> -->
+    </div>
+  </section>
+
+
+
+  <!-- ======= CALL TO ACTION ======= -->
+  <section class="cta-section my-5">
+    <div class="container">
+      <h2 class="mb-4">Start Protecting Your Digital World Today!</h2>
+      <a href="service.html" class="bg-success btn-cta">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h5>Connect With Us</h5>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@andrewcybersec"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+      </div>
+      <p>&copy; 2026 Andrew CyberSec. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms of Service</a> |
+        <a href="contact.html">Contact Us</a>
+      </p>
+      <p>Professional, Trusted & Legal Cybersecurity Services</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

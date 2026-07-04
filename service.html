@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew CyberSec - Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <style>
+        /* ==================== SERVICE SECTION -========================= */
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            width: 400px;
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+            background-color: #fff;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            /* width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px; */
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .service-card .card-body {
+            padding: 20px;
+        }
+
+        .service-card .btn-order {
+            color: #fff;
+            border: none;
+            transition: background 0.3s;
+            border-radius: 20px;
+        }
+
+        .service-card .btn-order:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!--=============HEADER IS STARTING =================-->
+    <header>
+        <div class="introduction">
+            <h1>Our Service's</h1>
+            <div class="logo_image">
+                <img src="photos/andrewcybersec.png" alt="andrew cybersec book hub logo image">
+            </div>
+            <div class="message">
+                <p>
+                    Our trusted cybersecurity services platform
+                </p>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="service.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============== WELCOME MESSAGE SECTION================== -->
+
+    <section class="welcome">
+        <h1>Our Cybersecurity Services</h1>
+        <p>Explore our professional cybersecurity solutions designed to protect your business, data, and IT
+            infrastructure from evolving cyber threats.</p>
+    </section> <br><br><br>
+
+
+    <!--==================== SERVICE SECTION -=========================-->
+
+    <section class="services-container container">
+        <!-- Releasing Cyber Security and IT employer -->
+        <div class="card service-card" id="penetration_testing">
+            <img src="photos/cyber security and it employer.jpg" alt="Penetration Testing">
+            <div class="card-body">
+                <h5 class="card-title">Cyber Security and IT Employer</h5>
+                <p class="card-text">
+                    We have release a cyber security employer and IT people to your organization to ensure trusted and
+                    legal services are done withn your organization or company.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+
+        <!-- Service 1: Penetration Testing -->
+        <div class="card service-card" id="penetration_testing">
+            <img src="photos/penetration testing.jpg" alt="Penetration Testing">
+            <div class="card-body">
+                <h5 class="card-title">Penetration Testing (Ethical Hacking)</h5>
+                <p class="card-text">
+                    Our professional penetration testing service simulates real-world cyber attacks to identify
+                    potential vulnerabilities before hackers exploit them.
+                    We perform in-depth testing on networks, web applications, and systems to uncover weaknesses such as
+                    SQL injections, misconfigurations, or access flaws.
+                    Each engagement includes a full vulnerability report with prioritized solutions and expert
+                    recommendations to enhance your organization's security posture.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 2: Network Security Assessment & Configuration -->
+        <div class="card service-card" id="network_security">
+            <img src="photos/network security assessment and configuration.jpg" alt="Network Security Assessment">
+            <div class="card-body">
+                <h5 class="card-title">Network Security Assessment & Configuration</h5>
+                <p class="card-text">
+                    We assess, design, and configure secure and high-performance network environments for businesses and
+                    individuals.
+                    Our experts analyze firewalls, routers, and access points to detect vulnerabilities and apply the
+                    best configurations for stability, speed, and data protection.
+                    This service ensures your LAN/Wi-Fi infrastructure is safe, efficient, and resilient against
+                    external attacks or internal misuse.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 3: Digital Forensics & Data Recovery -->
+        <div class="card service-card" id="digital_forensics">
+            <img src="photos/digital forensics and Data recovery.jpg" alt="Digital Forensics and Data Recovery">
+            <div class="card-body">
+                <h5 class="card-title">Digital Forensics & Data Recovery</h5>
+                <p class="card-text">
+                    Our digital forensics experts analyze and extract evidence from computers, mobile devices, and
+                    storage drives for investigations or recovery purposes.
+                    We recover deleted or corrupted files, trace unauthorized access, and prepare forensic reports for
+                    legal or corporate use.
+                    We ensure accurate and confidential results that
+                    support justice and data restoration.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 4: Malware Analysis & Removal -->
+        <div class="card service-card" id="malware_analysis">
+            <img src="photos/malware analysis and removal.jpg" alt="Malware Analysis">
+            <div class="card-body">
+                <h5 class="card-title">Malware Analysis & Removal</h5>
+                <p class="card-text">
+                    Our malware analysis service detects, analyzes, and removes viruses, trojans, and other malicious
+                    software from your systems.
+                    We use advanced tools to identify infection sources
+                    and eliminate threats safely.
+                    A detailed security report is provided to help prevent future infections and strengthen your
+                    organization’s cyber hygiene.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 5: Server Security Hardening -->
+        <div class="card service-card" id="server_hardening">
+            <img src="photos/server security hardening.jpg" alt="Server Security Hardening">
+            <div class="card-body">
+                <h5 class="card-title">Server Security Hardening</h5>
+                <p class="card-text">
+                    Our experts secure your Linux or Windows servers by implementing strict security configurations and
+                    access policies.
+                    We disable root logins, configure firewalls, enable intrusion detection, and apply regular system
+                    updates to reduce risk.
+                    With professional hardening, your servers remain fast, stable, and resistant to cyber intrusions and
+                    unauthorized access.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 6: Cloud Security Setup -->
+        <div class="card service-card" id="cloud_security">
+            <img src="photos/cloudy_security set-up.jpg" alt="Cloud Security Setup">
+            <div class="card-body">
+                <h5 class="card-title">Cloud Security Setup</h5>
+                <p class="card-text">
+                    Protect your organization’s cloud assets with our professional cloud security setup service.
+                    We implement multi-layered security using encryption, access control, and automated backups.
+                    Whether you use AWS, Google Cloud, or Microsoft Azure, we ensure that your data remains private,
+                    compliant, and recoverable at all times.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 7: Website Security Testing & Development -->
+        <div class="card service-card" id="web_security">
+            <img src="photos/website security and development.jpg" alt="Website Security Testing">
+            <div class="card-body">
+                <h5 class="card-title">Website Security Testing & Development</h5>
+                <p class="card-text">
+                    We design, build, and secure websites using PHP, HTML, and MySQL to ensure maximum protection and
+                    performance.
+                    Our team tests your website for vulnerabilities such as SQL injection, XSS, and CSRF attacks.
+                    With secure coding and SSL implementation, we help businesses maintain trustworthy, hacker-resistant
+                    web applications.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 8: IoT Device Security -->
+        <div class="card service-card" id="iot_security">
+            <img src="photos/iot device security.jpg" alt="IoT Device Security">
+            <div class="card-body">
+                <h5 class="card-title">IoT Device Security</h5>
+                <p class="card-text">
+                    Secure your smart home or industrial IoT devices with our IoT security service.
+                    We identify vulnerabilities in connected devices, routers, and sensors.
+                    Our team ensures that your devices are protected from unauthorized access, data theft, and cyber
+                    espionage.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 9: Incident Response -->
+        <div class="card service-card" id="incident_response">
+            <img src="photos/inciden_response.jpg" alt="Incident Response">
+            <div class="card-body">
+                <h5 class="card-title">Incident Response</h5>
+                <p class="card-text">
+                    In the event of a cyber attack, our incident response team acts quickly to contain, investigate, and
+                    resolve security breaches.
+                    We minimize downtime, identify attack sources, and guide your organization through a safe recovery
+                    process.
+                    Post-incident analysis ensures lessons are learned, and stronger defenses are implemented.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 10: Cybersecurity Consulting -->
+        <div class="card service-card" id="cyber_consulting">
+            <img src="photos/cyber security consulting.jpg" alt="Cybersecurity Consulting">
+            <div class="card-body">
+                <h5 class="card-title">Cybersecurity Consulting</h5>
+                <p class="card-text">
+                    We provide professional consulting services to help organizations identify risks, design security
+                    strategies, and comply with cybersecurity standards.
+                    Our team advises on data protection, access control, and best practices for both individuals and
+                    enterprises.
+                    Through regular assessments and strategic planning, we strengthen your defense and build long-term
+                    digital resilience.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+
+        <!-- Service 11: Cyber Awareness & Training -->
+        <div class="card service-card" id="cyber_training">
+            <img src="photos/cyber awareness and training.jpg" alt="Cyber Awareness and Training">
+            <div class="card-body">
+                <h5 class="card-title">Cyber Awareness & Training</h5>
+                <p class="card-text">
+                    Our awareness training educates employees, students, and individuals on safe online behavior,
+                    password management, and phishing prevention.
+                    Through customized programs, interactive videos, and real-world simulations, we empower users to
+                    identify and respond to digital threats confidently.
+                    This human-centered approach enhances your organization’s overall cybersecurity posture.
+                </p>
+                <button class="btn btn-order w-100 bg-success">Order</button>
+            </div>
+        </div>
+    </section>
+
+    <!--===================== FOOTER =================== -->
+
+    <footer class="footer">
+        <div class="container">
+            <h5>Connect With Us</h5>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@andrewcybersec"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>&copy; 2026 Andrew CyberSec. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a> |
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <p>Professional, Trusted & Legal Cybersecurity Services</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
